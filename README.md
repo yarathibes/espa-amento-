@@ -1,359 +1,176 @@
- <section class="slide active">
-
-        <div class="conteudo">
-
-            <div class="tag">
-                Tecnologia • Inovação • Futuro
-            </div>
-
-            <h1>
-                Visão para<br>
-                <b>Tecnologia</b>
-            </h1>
-
-            <div class="linha"></div>
-
-            <p>
-                Tecnologia que transforma o presente
-                e constrói o futuro.
-            </p>
-
-        </div>
-
-        <div class="icone">
-            💻
-        </div>
-
-    </section>
-
-
-    <!-- SLIDE 2 -->
-
-    <section class="slide">
-
-        <div class="conteudo">
-
-            <div class="tag">
-                Futuro digital
-            </div>
-
-            <h2>
-                O futuro é <b>digital</b>
-            </h2>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <div class="card-icon">
-                        🌐
-                    </div>
-
-                    <h3>
-                        Conexão
-                    </h3>
-
-                    <p>
-                        Pessoas e sistemas cada vez mais conectados.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-icon">
-                        ⚙️
-                    </div>
-
-                    <h3>
-                        Automação
-                    </h3>
-
-                    <p>
-                        Tarefas mais rápidas e inteligentes.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-icon">
-                        🧠
-                    </div>
-
-                    <h3>
-                        Inteligência
-                    </h3>
-
-                    <p>
-                        Dados transformados em decisões.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-icon">
-                        🚀
-                    </div>
-
-                    <h3>
-                        Oportunidades
-                    </h3>
-
-                    <p>
-                        Novas formas de criar e inovar.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SLIDE 3 -->
-
-    <section class="slide">
-
-        <div class="conteudo">
-
-            <div class="tag">
-                Solução de problemas
-            </div>
-
-            <h2>
-                Tecnologia para
-                <b>resolver problemas</b>
-            </h2>
-
-            <p>
-                A tecnologia pode transformar problemas
-                em oportunidades.
-            </p>
-
-            <div class="fluxo">
-
-                <div class="etapa">
-                    🔎
-                    <strong>Problema</strong>
-                </div>
-
-                <div class="seta">
-                    →
-                </div>
-
-                <div class="etapa">
-                    💡
-                    <strong>Ideia</strong>
-                </div>
-
-                <div class="seta">
-                    →
-                </div>
-
-                <div class="etapa">
-                    🛠️
-                    <strong>Solução</strong>
-                </div>
-
-                <div class="seta">
-                    →
-                </div>
-
-                <div class="etapa">
-                    📈
-                    <strong>Resultado</strong>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SLIDE 4 -->
-
-    <section class="slide">
-
-        <div class="ia">
-
-            <div class="conteudo">
-
-                <div class="tag">
-                    Inteligência Artificial
-                </div>
-
-                <h2>
-                    Da informação à
-                    <b>decisão</b>
-                </h2>
-
-                <ul class="lista">
-
-                    <li>
-                        Automatizar tarefas
-                    </li>
-
-                    <li>
-                        Analisar dados
-                    </li>
-
-                    <li>
-                        Criar experiências personalizadas
-                    </li>
-
-                    <li>
-                        Ajudar nas decisões
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <div class="cerebro">
-                🧠
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SLIDE 5 -->
-
-    <section class="slide">
-
-        <div class="conteudo">
-
-            <div class="tag">
-                Nossa visão
-            </div>
-
-            <h2>
-                Criar tecnologia
-                <b>com propósito</b>
-            </h2>
-
-            <blockquote>
-
-                “Não basta criar algo novo.
-                Precisamos criar algo que
-                <b>faça diferença.</b>”
-
-            </blockquote>
-
-            <div class="conexao">
-                👤 ───── 💻 ───── 🌎
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SLIDE 6 -->
-
-    <section class="slide final">
-
-        <div class="conteudo">
-
-            <div class="tag">
-                Próximo passo
-            </div>
-
-            <h1>
-                O futuro
-                <b>começa agora.</b>
-            </h1>
-
-            <div class="formula">
-                Tecnologia + Pessoas + Criatividade = Futuro
-            </div>
-
-            <div class="frase">
-                Imagine. Inove. Transforme.
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <div class="botoes">
-
-        <button onclick="voltar()">
-            ←
-        </button>
-
-        <button onclick="avancar()">
-            →
-        </button>
-
-    </div>
-
-
-    <script>
-
-        const slides = document.querySelectorAll(".slide");
-
-        let atual = 0;
-
-
-        function mostrarSlide(numero) {
-
-            slides.forEach(function(slide) {
-                slide.classList.remove("active");
-            });
-
-            slides[numero].classList.add("active");
-        }
-
-
-        function avancar() {
-
-            atual++;
-
-            if (atual >= slides.length) {
-                atual = 0;
-            }
-
-            mostrarSlide(atual);
-        }
-
-
-        function voltar() {
-
-            atual--;
-
-            if (atual < 0) {
-                atual = slides.length - 1;
-            }
-
-            mostrarSlide(atual);
-        }
-
-
-        document.addEventListener("keydown", function(event) {
-
-            if (event.key === "ArrowRight") {
-                avancar();
-            }
-
-            if (event.key === "ArrowLeft") {
-                voltar();
-            }
-
-        });
-
-    </script>
-
-</body>
-
-</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #050816;
+  color: white;
+}
+
+.slide {
+  min-height: 100vh;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      #633cff44,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      #00d9ff33,
+      transparent 30%
+    );
+
+  border-bottom: 1px solid #ffffff15;
+}
+
+.conteudo {
+  max-width: 900px;
+}
+
+span {
+  color: #5ee7ff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 30px 0;
+}
+
+b {
+  color: #5ee7ff;
+}
+
+p {
+  color: #b8c0d4;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.imagem {
+  font-size: 150px;
+}
+
+.imagem-grande {
+  font-size: 200px;
+  padding: 70px;
+  border-radius: 50%;
+  background: #ffffff08;
+  box-shadow: 0 0 80px #4c6fff55;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 20px;
+  background: #ffffff08;
+  border: 1px solid #ffffff15;
+}
+
+.card h3 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 17px;
+}
+
+.fluxo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.fluxo div {
+  padding: 25px;
+  min-width: 150px;
+  text-align: center;
+  border-radius: 18px;
+  background: #ffffff0d;
+  border: 1px solid #ffffff18;
+  font-size: 30px;
+}
+
+.fluxo strong {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.fluxo i {
+  color: #5ee7ff;
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+li {
+  font-size: 24px;
+  color: #d9deeb;
+  padding: 15px 0;
+}
+
+blockquote {
+  margin-top: 50px;
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: bold;
+  max-width: 900px;
+}
+
+.conexao {
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+.final {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.final h1 {
+  max-width: 1000px;
+}
+
+.formula {
+  margin: 40px 0;
+  padding: 25px 45px;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    #00d9ff22,
+    #704cff33
+  );
+  border: 1px solid #ffffff20;
+  font-size: 25px;
+  font-weight: bold;
+}
